@@ -1,0 +1,139 @@
+/* Common styles for all files */
+body {
+    background-color: black;
+    margin: 0;
+    background-image: url("../TheAssets/bg_glo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: scroll;
+}
+
+#navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background-color: #252c3e; /* Unified color */
+}
+
+#log {
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #252c3e; /* Unified color */
+    text-decoration: none;
+    color: grey;
+    text-align: center;
+}
+
+li a.active {
+    background-color: #3d304e;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #031428;
+    color: #3d304e;
+}
+
+.menu-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.menu-box {
+    border: 1px solid rgba(245, 245, 245, 1);
+    border-radius: 0.5rem;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-box:hover {
+    transform: scale(1.05);
+}
+
+.folder {
+    padding: 30px;
+    text-align: left;
+    float: left;
+    margin-bottom: -150px;
+    margin-left: 40px;
+    overflow: auto;
+    z-index: 2;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+/* Unique styles from indexSt.css */
+.button-container {
+    margin-top: 120vh;
+    text-align: center;
+}
+
+.float-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #24123a;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-button:hover {
+    background-color: #a066c5;
+    box-shadow: 0 0 15px rgba(160, 102, 197, 0.6), 0 0 30px rgba(160, 102, 197, 0.4);
+}
+
+/* New styles for the invoice section */
+.invoice-box {
+    margin-left: 350px;
+    border: 1px solid #651923;
+    padding: 10px;
+    max-width: 800px;
+}
+
+.invoice-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+hr {
+    border-bottom: 1px solid #651923;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../TheAssets/logo.png" sizes="96x96">
+    <title>altkicks.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <script src="theJava.js"></script>
+</head>
+<body style="color:white;" ">
+    <ul id="navi">
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="products.html">Products</a></li>
+        <li><a href="invoice.html">Invoice</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    
+    <div>
+        <center>
+            <img style="position:center; height:20vh; width:auto; margin-top:28px;" src="../TheAssets/banner.png" alt="Banner">
+        </center>
+    </div>
+
+    <div class="folder"><h2>DARK &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="lolita.html">LOLITA</a></h2></div>
+    <div style="transition: 1s smooth;"><center>
+        <img id="fold" style="clear: left; position:center; height:20vh; width:auto; margin-top:28px;" src="../TheAssets/folder.png" alt="folder element">
+    </center></div>
+	
+    <div class="menu-container" style="margin-top: 60px;">
+        <div class="menu-box">
+            <img src="../TheAssets/shoe1.jpeg" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>2" Cupid's Straight Jacket</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$4005.00</h5>
+            <button onclick="addToInvoice('2in Cupids Straight Jacket', 4005.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe2.jpg" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>4" Hell-raider Platforms</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$10005.00</h5>
+            <button onclick="addToInvoice('4in Hell-raider Platforms', 10005.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe3.png" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>6" Cropped Ankle Bedazzler Platforms</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$5505.00</h5>
+            <button onclick="addToInvoice('6in Cropped Ankle Bedazzler Platforms', 5505.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe4.png" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>6" The Leg Splint Lace-up</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$15005.00</h5>
+            <button onclick="addToInvoice('6in The Leg Splint Lace-up', 15005.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe5.png" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>1.5" Glossy Asylum-wear</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$4444.00</h5>
+            <button onclick="addToInvoice('1.5in Glossy Asylum-wear', 4444.00)">Add to Cart</button>
+        </div>
+    </div>
+<div style="display: flex; justify-content: space-between;">
+    <button id="check-out" onclick="checkout()">Check Out</button>
+    <button id="clear" onclick="clearCart()">Clear Cart</button>
+</div><br>
+</body>
+</html>

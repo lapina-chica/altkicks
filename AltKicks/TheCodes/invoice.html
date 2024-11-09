@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../TheAssets/logo.png" sizes="96x96">
+    <title>altkicks.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invoice.css">
+    <script src="theJava.js"></script>
+</head>
+<body onload="displayInvoice(); printDate();" style="color:white; ">
+    <ul id="navi">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="active" href="invoice.html">Invoice</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div>
+        <center>
+            <img style="position:center; height:20vh; width:auto; margin-top:28px;" src="../TheAssets/banner.png" alt="Banner">
+        </center>
+    </div>
+
+    <div class="invoice-box">
+        <div>
+            <p><strong>Invoice #: </strong> 00255</p>
+            <div><p><strong>Date: </strong><span id="printDate"></span></p></div>
+            <div><p><strong>Due Date: </strong><span id="dueDate"></span></p></div>
+        </div>
+        
+        <h1>Invoice</h1>
+        <hr>
+        
+        <p><strong>Billed to:</strong><br>
+            Customer #225<br>
+            Jamaica, W.I.<br>
+            City, Country 
+        </p>
+
+        <!displayInvoice()will do magic>
+        <div id="invoice-list"></div>
+        
+        <hr>
+        
+        <div class="item-total">
+            <h4 id="total"><strong>Total: $0.00</strong></h4>
+        </div>
+    </div>
+	<div style="display: flex; justify-content: space-between;">
+		<a href="products.html"> <button onclick="clearCart()">Cancel Invoice</button></a>
+		<a href="products.html"><button href="products.html">Exit</button></a>
+	</div>
+</body>
+</html>

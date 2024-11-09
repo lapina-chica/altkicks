@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../TheAssets/logo.png" sizes="96x96">
+    <title>altkicks.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <script src="theJava.js"></script>
+	
+</head>
+<body style="color:white;">
+    <ul id="navi">
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="products.html">Products</a></li>
+        <li><a href="invoice.html">Invoice</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    
+    <div>
+        <center>
+            <img style="position:center; height:20vh; width:auto; margin-top:28px;" src="../TheAssets/banner.png" alt="Banner">
+        </center>
+    </div>
+    
+	    <div class="folder"><h2><a href="products.html">DARK</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp LOLITA</h2></div>
+    <div><center>
+        <img  style="clear: left; position:center; height:20vh; width:auto; margin-top:28px;" src="../TheAssets/folder_lol.png" alt="Banner">
+    </center></div>
+	
+    <div class="menu-container" style="margin-top: 60px;">
+        <div class="menu-box">
+            <img src="../TheAssets/shoe6.png" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>1" Princess Poppy</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$7500.00</h5>
+            <button onclick="addToInvoice('1in Princess Poppy', 7500.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe7.jpg" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>2" Lace Elianas</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$10500.00</h5>
+            <button onclick="addToInvoice('2in Lace Elianas', 10500.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe8.png" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>6" Pastel Platforms</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$5500.00</h5>
+            <button onclick="addToInvoice('6in Pastel Platforms', 5500.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe9.jpg" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>3" Strawberry Heart Cakes</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$15000.00</h5>
+            <button onclick="addToInvoice('3in Strawberry Heart Cakes', 15000.00)">Add to Cart</button>
+        </div>
+        <div class="menu-box">
+            <img src="../TheAssets/shoe10.jpg" alt="Product Image" style="width: 100%; height: auto; border-radius: 0.5rem; border: 1px solid rgb(245, 245, 245);"/>
+            <center><h4>2" Cutie PaTootie</h4>
+            <p><img src="../TheAssets/stars.png" width="auto" height="28"></p>
+            <h5>$6000.00</h5>
+            <button onclick="addToInvoice('2in Cutie PaTootie', 6000.00)">Add to Cart</button>
+        </div>
+    </div>
+<div style="display: flex; justify-content: space-between;">
+    <button id="check-out" onclick="checkout()">Check Out</button>
+    <button id="clear" onclick="clearCart()">Clear Cart</button>
+</div>
+<br>
+
+</body>
+</html>

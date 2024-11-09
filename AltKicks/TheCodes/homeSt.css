@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+	background-image: url("../TheAssets/bg_glow.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: top left;
+	
+	background-attachment: scroll;
+}
+
+#navi {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background-color: #161729;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #161729;
+    text-decoration: none;
+    color: grey;
+    text-align: center;
+}
+
+li a.active {
+    background-color: #24123a;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #031428;
+    color: #3d304e;
+
+}
+.button-container {
+    margin-top: 120vh;
+    text-align: center;
+}
+
+.float-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #24123a;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-button:hover {
+    background-color: #a066c5; 
+    box-shadow: 0 0 15px rgba(160, 102, 197, 0.6), 0 0 30px rgba(160, 102, 197, 0.4);
+}
+#l-container{
+	margin:0;
+	margin-left:20px;
+	max-width:40vw;
+}
+#r-img{
+	float:right;
+	margin-right:20px;
+}
